@@ -3,34 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tropical Shine Pressure & Soft Washing | South Florida</title>
-<meta name="description" content="Residential and commercial pressure washing and soft washing in Broward and Miami-Dade. Roofs, houses, driveways, patios, pool decks and fences. Free estimates on WhatsApp: (645) 236-4779.">
+<title>Tropical Shine Pressure & Soft Washing | Roof Soft Washing, House Washing, Driveways & Paver Sealing – Broward & Miami-Dade</title>
+<meta name="description" content="Roof soft washing, house washing, driveways, pool decks and paver sealing in Broward &amp; Miami-Dade. Tropical Shine Pressure &amp; Soft Washing — free estimates: (645) 236-4779.">
 <meta name="theme-color" content="#0e7490">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tropical Shine Pressure & Soft Washing LLC">
-<meta property="og:description" content="Pressure washing and soft washing for homes and businesses in Broward and Miami-Dade. Free estimates — send a photo on WhatsApp.">
+<meta property="og:description" content="Roof soft washing, house washing, driveways and paver sealing in Broward &amp; Miami-Dade. We Bring The Shine. Free estimates: (645) 236-4779.">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Tropical Shine Pressure & Soft Washing LLC",
-  "description": "Residential and commercial pressure washing and soft washing in South Florida.",
-  "telephone": "+1-645-236-4779",
-  "areaServed": [
-    {"@type": "City", "name": "Pembroke Pines, FL"},
-    {"@type": "City", "name": "Weston, FL"},
-    {"@type": "City", "name": "Miramar, FL"},
-    {"@type": "City", "name": "Hollywood, FL"},
-    {"@type": "City", "name": "North Miami, FL"},
-    {"@type": "City", "name": "Miami, FL"}
-  ],
-  "knowsAbout": ["Pressure washing", "Soft washing", "Roof cleaning"]
-}
+<script>
+// SERVICE AREA — edit here only. Feeds the city list on the page and the JSON-LD below.
+var SERVICE_COUNTIES = ["Broward County", "Miami-Dade County"];
+var SERVICE_CITIES = ["Pembroke Pines", "Weston", "Miramar", "Hollywood", "North Miami", "Miami"];
+
+(function () {
+  var ld = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Tropical Shine Pressure & Soft Washing LLC",
+    "slogan": "We Bring The Shine",
+    "description": "Roof soft washing, house washing, driveway, patio, fence, paver sealing, trash bin and commercial exterior cleaning in Broward & Miami-Dade.",
+    "telephone": "+1-645-236-4779",
+    "areaServed": SERVICE_COUNTIES.map(function (n) { return { "@type": "AdministrativeArea", "name": n + ", FL" }; })
+      .concat(SERVICE_CITIES.map(function (n) { return { "@type": "City", "name": n + ", FL" }; })),
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "07:00", "closes": "19:00"
+    }],
+    "sameAs": [
+      "https://www.instagram.com/_webringtheshine/"
+      // TODO: add the Google Business Profile link once confirmed, e.g. "https://www.google.com/maps/place/?q=place_id:XXXX"
+    ]
+  };
+  var el = document.createElement('script');
+  el.type = 'application/ld+json';
+  el.text = JSON.stringify(ld);
+  document.head.appendChild(el);
+})();
 </script>
 <style>
 :root{
@@ -75,8 +88,8 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);bac
 .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:66px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
 .logo-mark{width:38px;height:38px;flex:none}
-.logo-txt{font:700 1.05rem/1.05 Outfit,sans-serif;color:var(--teal-d)}
-.logo-txt small{display:block;font:500 .68rem/1.3 Inter,sans-serif;color:var(--muted);letter-spacing:.02em}
+.logo-txt{font:700 .98rem/1.12 Outfit,sans-serif;color:var(--teal-d)}
+.logo-txt>span{display:block}
 .nav-links{display:none;gap:28px;font-weight:500;font-size:.95rem}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--teal)}
@@ -92,15 +105,17 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);bac
 .hero-badge .stars{color:#fde047;letter-spacing:1px}
 .hero h1{font-size:clamp(2.4rem,9vw,4.4rem);font-weight:800;max-width:14ch}
 .hero h1 em{font-style:normal;background:linear-gradient(90deg,#a7f3d0,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{font:600 clamp(1.05rem,2.8vw,1.3rem)/1.2 Outfit,sans-serif;color:#a7f3d0;letter-spacing:.02em;margin-top:12px}
 .hero p.lead{font-size:clamp(1.05rem,2.6vw,1.25rem);max-width:36rem;margin:20px 0 32px;color:#e0f7fa}
 .hero-ctas{display:flex;flex-direction:column;gap:12px}
 .hero-note{margin-top:18px;font-size:.88rem;color:#c6eef3}
 .hero-card{display:none}
 .hero-card{background:rgba(255,255,255,.96);color:var(--ink);border-radius:22px;padding:26px 28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);max-width:400px;justify-self:end}
-.hero-card .stars{color:#f5b301;font-size:1.25rem;letter-spacing:3px}
-.hero-card blockquote{display:block;font:600 1.35rem/1.35 Outfit,sans-serif;margin:10px 0 12px}
-.hero-card .who{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.9rem}
-.hero-card .who svg{width:18px;height:18px}
+.hc-title{font:700 1.35rem/1.2 Outfit,sans-serif;margin-bottom:14px}
+.hc-list{list-style:none;display:grid;gap:10px;margin-bottom:20px}
+.hc-list li{display:flex;gap:10px;align-items:center;font-weight:500}
+.hc-list svg{width:20px;height:20px;color:var(--green);flex:none}
+.hero-card .btn{width:100%}
 .wave{position:absolute;left:0;right:0;bottom:-1px;z-index:2;width:100%;height:60px}
 
 /* trust bar */
@@ -158,6 +173,8 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);bac
 .ba-knob{position:absolute;left:50%;top:50%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#fff;z-index:3;display:grid;place-items:center;color:var(--teal);box-shadow:0 4px 12px rgba(0,0,0,.2)}
 .ba-knob svg{width:22px;height:22px}
 .ba-cap{padding:14px 18px;display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted)}
+.ba .cap-empty,.ba.empty .cap-real{display:none}
+.ba.empty .cap-empty{display:inline}
 .ba-cap svg{width:20px;height:20px;color:var(--aqua);flex:none}
 
 /* review */
@@ -211,7 +228,12 @@ form.est .btn{width:100%;margin-top:4px}
 footer{background:var(--ink);color:#b9d9e0;padding:48px 0 110px;font-size:.92rem}
 .ft-grid{display:grid;gap:26px}
 footer .logo-txt{color:#fff}
-footer .logo-txt small{color:#8fb5bd}
+.ft-tag{font:600 1.1rem/1.2 Outfit,sans-serif;color:#a7f3d0;margin-bottom:8px}
+.ig-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.ig-link svg{width:18px;height:18px;flex:none}
+.ig-card{margin-top:22px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);font-size:.92rem}
+.ig-card svg{width:30px;height:30px;color:#d6249f}
+.ig-card b{display:block;color:var(--teal-d)}
 footer h4{font:600 .78rem/1 Inter,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#fff;margin-bottom:12px}
 footer a{text-decoration:none}
 footer a:hover{color:#fff}
@@ -347,14 +369,14 @@ footer ul{list-style:none;display:grid;gap:8px}
 
 <header class="top">
   <div class="wrap nav">
-    <a href="#top" class="logo" aria-label="Tropical Shine home">
+    <a href="#top" class="logo" aria-label="Tropical Shine Pressure &amp; Soft Washing — home">
       <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
         <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c3d6"/><stop offset="1" stop-color="#16a34a"/></linearGradient></defs>
         <circle cx="20" cy="20" r="20" fill="url(#lg)"/>
         <path d="M20 8c4.5 6 7 10 7 13.5a7 7 0 0 1-14 0C13 18 15.5 14 20 8z" fill="#fff"/>
         <path d="M17 22.5a3.2 3.2 0 0 0 3 3" stroke="#22c3d6" stroke-width="2" fill="none" stroke-linecap="round"/>
       </svg>
-      <span class="logo-txt">Tropical Shine<small>Pressure &amp; Soft Washing</small></span>
+      <span class="logo-txt"><span>Tropical Shine</span> <span>Pressure &amp; Soft Washing</span></span>
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="#services">Services</a>
@@ -378,6 +400,7 @@ footer ul{list-style:none;display:grid;gap:8px}
     <div>
     <div class="hero-badge"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google</div>
     <h1>Make your home <em>shine</em> again.</h1>
+    <p class="tagline">✦ We Bring The Shine</p>
     <p class="lead">Florida sun, rain and humidity leave mold, algae and dark streaks on roofs, walls and driveways. We wash it away and bring your property back to life — right here in Broward and Miami-Dade.</p>
     <div class="hero-ctas">
       <a class="btn btn-wa js-wa" href="https://wa.me/16452364779?text=Hi!%20I'd%20like%20a%20free%20estimate" target="_blank" rel="noopener">
@@ -389,13 +412,17 @@ footer ul{list-style:none;display:grid;gap:8px}
         Call Now
       </a>
     </div>
-    <p class="hero-note">Open until 7 PM · Send a photo, get a quote</p>
+    <p class="hero-note">Mon–Sat 7 AM – 7 PM · Send a photo, get a quote</p>
     </div>
-    <figure class="hero-card">
-      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-      <blockquote>“Tropical Shine did an amazing job and a very good value.”</blockquote>
-      <figcaption class="who"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-1.9 3.3-4.8 3.3-7.9z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1-3.7 1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z"/></svg> Google review</figcaption>
-    </figure>
+    <div class="hero-card">
+      <p class="hc-title">Free estimate in minutes</p>
+      <ul class="hc-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Send a photo on WhatsApp</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Mon–Sat 7 AM – 7 PM</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Homes, businesses &amp; rentals</li>
+      </ul>
+      <a class="btn btn-wa js-wa" href="https://wa.me/16452364779?text=Hi!%20I'd%20like%20a%20free%20estimate" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Message us</a>
+    </div>
   </div>
   <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c240 30 480 30 720 10S1200-10 1440 20v40H0z" fill="#f6fcfd"/></svg>
 </section>
@@ -410,7 +437,7 @@ footer ul{list-style:none;display:grid;gap:8px}
       </div>
       <div class="trust-item g">
         <div class="trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <div><b>Licensed LLC</b><small>Professional local company</small></div>
+        <div><b>Registered Florida LLC</b><small>Locally owned &amp; operated</small></div>
       </div>
       <div class="trust-item">
         <div class="trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 21V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg></div>
@@ -418,7 +445,7 @@ footer ul{list-style:none;display:grid;gap:8px}
       </div>
       <div class="trust-item g">
         <div class="trust-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v12h14V9"/><path d="M10 21v-6h4v6"/></svg></div>
-        <div><b>Locally owned</b><small>Proudly South Florida</small></div>
+        <div><b>Broward &amp; Miami-Dade</b><small>We come to you</small></div>
       </div>
     </div>
   </div>
@@ -434,7 +461,7 @@ footer ul{list-style:none;display:grid;gap:8px}
     </div>
     <div class="svc-grid car">
       <article class="svc rv">
-        <img class="svc-img" src="https://images.unsplash.com/photo-1605450099279-533bd3ce379a?auto=format&fit=crop&w=640&q=70" alt="Clay barrel tile roof" loading="lazy" width="640" height="400">
+        <img class="svc-img" src="assets/photos/roof.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1605450099279-533bd3ce379a?auto=format&fit=crop&w=640&q=70'" alt="Clay barrel tile roof" loading="lazy" width="640" height="400">
         <div class="svc-b">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12 12 4l10 8"/><path d="M5 10v10h14V10"/><path d="M9 14h6"/></svg></div>
         <h3>Roof soft washing</h3>
@@ -442,7 +469,7 @@ footer ul{list-style:none;display:grid;gap:8px}
         </div>
       </article>
       <article class="svc rv">
-        <img class="svc-img" src="https://images.unsplash.com/photo-1561831710-3a8abd9657cf?auto=format&fit=crop&w=640&q=70" alt="White two-story house with palm trees" loading="lazy" width="640" height="400">
+        <img class="svc-img" src="assets/photos/house.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1561831710-3a8abd9657cf?auto=format&fit=crop&w=640&q=70'" alt="White two-story house with palm trees" loading="lazy" width="640" height="400">
         <div class="svc-b">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10M15 10v10"/></svg></div>
         <h3>House &amp; exterior walls</h3>
@@ -450,7 +477,7 @@ footer ul{list-style:none;display:grid;gap:8px}
         </div>
       </article>
       <article class="svc rv">
-        <img class="svc-img" src="https://images.unsplash.com/photo-1785088476622-8e4c52ee8b53?auto=format&fit=crop&w=640&q=70" alt="House with a long paver driveway" loading="lazy" width="640" height="400">
+        <img class="svc-img" src="assets/photos/driveway.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1785088476622-8e4c52ee8b53?auto=format&fit=crop&w=640&q=70'" alt="House with a long paver driveway" loading="lazy" width="640" height="400">
         <div class="svc-b">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 21M16 3l4 18M12 5v2M12 11v2M12 17v2"/></svg></div>
         <h3>Driveways &amp; sidewalks</h3>
@@ -458,7 +485,7 @@ footer ul{list-style:none;display:grid;gap:8px}
         </div>
       </article>
       <article class="svc rv">
-        <img class="svc-img" src="https://images.unsplash.com/photo-1602774895312-f002b8f2f33b?auto=format&fit=crop&w=640&q=70" alt="Pool with a light stone deck" loading="lazy" width="640" height="400">
+        <img class="svc-img" src="assets/photos/patio.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1602774895312-f002b8f2f33b?auto=format&fit=crop&w=640&q=70'" alt="Pool with a light stone deck" loading="lazy" width="640" height="400">
         <div class="svc-b">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M2 20c2 0 2-1.5 4-1.5S8 20 10 20s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M8 12V5a2 2 0 0 1 4 0M16 12V5a2 2 0 0 0-4 0M8 8h8"/></svg></div>
         <h3>Patios &amp; pool decks</h3>
@@ -466,7 +493,7 @@ footer ul{list-style:none;display:grid;gap:8px}
         </div>
       </article>
       <article class="svc rv">
-        <img class="svc-img" src="https://images.unsplash.com/photo-1583805978118-ba9a81ac1399?auto=format&fit=crop&w=640&q=70" alt="White picket fence in front of a house" loading="lazy" width="640" height="400">
+        <img class="svc-img" src="assets/photos/fence.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583805978118-ba9a81ac1399?auto=format&fit=crop&w=640&q=70'" alt="White picket fence in front of a house" loading="lazy" width="640" height="400">
         <div class="svc-b">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V7l2-3 2 3v14M10 21V7l2-3 2 3v14M16 21V7l2-3 2 3v14M2 11h20M2 17h20"/></svg></div>
         <h3>Fences</h3>
@@ -474,11 +501,35 @@ footer ul{list-style:none;display:grid;gap:8px}
         </div>
       </article>
       <article class="svc rv">
-        <img class="svc-img" src="https://images.unsplash.com/photo-1761418022194-cd930509f60f?auto=format&fit=crop&w=640&q=70" alt="Apartment building with palm trees and fountain" loading="lazy" width="640" height="400">
+        <img class="svc-img" src="assets/photos/commercial.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1761418022194-cd930509f60f?auto=format&fit=crop&w=640&q=70'" alt="Apartment building with palm trees and fountain" loading="lazy" width="640" height="400">
         <div class="svc-b">
         <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V5l7-2v18M12 7h7v14"/><path d="M8 8v.01M8 12v.01M8 16v.01M15 11v.01M15 15v.01"/></svg></div>
         <h3>Commercial properties</h3>
         <p>Storefronts, plazas, parking areas and buildings — a clean first impression for your customers.</p>
+        </div>
+      </article>
+      <article class="svc rv">
+        <img class="svc-img" src="assets/photos/paver-sealing.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1681241942875-7a1ea65899b4?auto=format&fit=crop&w=640&q=70'" alt="Clay pavers laid in a herringbone pattern" loading="lazy" width="640" height="400">
+        <div class="svc-b">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v6M15 9v6M9 15v6"/></svg></div>
+        <h3>Paver sealing</h3>
+        <p>Protects pavers from stains, weeds and fading after a deep clean.</p>
+        </div>
+      </article>
+      <article class="svc rv">
+        <img class="svc-img" src="assets/photos/bins.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=640&q=70'" alt="Row of clean trash and recycling bins" loading="lazy" width="640" height="400">
+        <div class="svc-b">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 3h4M6 7l1 14h10l1-14"/><path d="M10 11v6M14 11v6"/></svg></div>
+        <h3>Trash bin cleaning</h3>
+        <p>Cleans and deodorizes residential and commercial trash bins.</p>
+        </div>
+      </article>
+      <article class="svc rv">
+        <img class="svc-img" src="assets/photos/realtors.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1725379448168-e33c5e09d47e?auto=format&fit=crop&w=640&q=70'" alt="For sale sign in front of a property" loading="lazy" width="640" height="400">
+        <div class="svc-b">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 6h14v8H5"/><path d="M9 10h6"/></svg></div>
+        <h3>Realtors &amp; rental properties</h3>
+        <p>Fast-turnaround exterior cleaning before listings, showings and move-ins — for realtors and property managers.</p>
         </div>
       </article>
     </div>
@@ -527,28 +578,28 @@ footer ul{list-style:none;display:grid;gap:8px}
     </div>
     <div class="ba-grid car">
       <figure class="ba rv">
-        <div class="ba-img" role="img" aria-label="Before and after photo placeholder">
+        <div class="ba-img">
           <span class="ba-lbl b">Before</span><span class="ba-lbl a">After</span>
-          <div class="ba-before"></div><div class="ba-after"></div>
+          <div class="ba-before"><img src="assets/photos/before-1.jpg" alt="Tile roof with dark algae streaks before soft washing" loading="lazy" onerror="this.closest('.ba').classList.add('empty');this.remove()"></div><div class="ba-after"><img src="assets/photos/after-1.jpg" alt="The same tile roof clean after soft washing" loading="lazy" onerror="this.closest('.ba').classList.add('empty');this.remove()"></div>
           <span class="ba-knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
         </div>
-        <figcaption class="ba-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Your before &amp; after photo here</figcaption>
+        <figcaption class="ba-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg><span class="cap-real">Roof soft washing</span><span class="cap-empty">Your before &amp; after photo here</span></figcaption>
       </figure>
       <figure class="ba rv">
-        <div class="ba-img" role="img" aria-label="Before and after photo placeholder">
+        <div class="ba-img">
           <span class="ba-lbl b">Before</span><span class="ba-lbl a">After</span>
-          <div class="ba-before"></div><div class="ba-after"></div>
+          <div class="ba-before"><img src="assets/photos/before-2.jpg" alt="Stained, dirty concrete driveway before pressure washing" loading="lazy" onerror="this.closest('.ba').classList.add('empty');this.remove()"></div><div class="ba-after"><img src="assets/photos/after-2.jpg" alt="The same driveway bright and clean after pressure washing" loading="lazy" onerror="this.closest('.ba').classList.add('empty');this.remove()"></div>
           <span class="ba-knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
         </div>
-        <figcaption class="ba-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Your before &amp; after photo here</figcaption>
+        <figcaption class="ba-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg><span class="cap-real">Driveway pressure washing</span><span class="cap-empty">Your before &amp; after photo here</span></figcaption>
       </figure>
       <figure class="ba rv">
-        <div class="ba-img" role="img" aria-label="Before and after photo placeholder">
+        <div class="ba-img">
           <span class="ba-lbl b">Before</span><span class="ba-lbl a">After</span>
-          <div class="ba-before"></div><div class="ba-after"></div>
+          <div class="ba-before"><img src="assets/photos/before-3.jpg" alt="Exterior wall with mildew and dirt before house washing" loading="lazy" onerror="this.closest('.ba').classList.add('empty');this.remove()"></div><div class="ba-after"><img src="assets/photos/after-3.jpg" alt="The same exterior wall clean after house washing" loading="lazy" onerror="this.closest('.ba').classList.add('empty');this.remove()"></div>
           <span class="ba-knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
         </div>
-        <figcaption class="ba-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Your before &amp; after photo here</figcaption>
+        <figcaption class="ba-cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg><span class="cap-real">House washing</span><span class="cap-empty">Your before &amp; after photo here</span></figcaption>
       </figure>
     </div>
   </div>
@@ -561,7 +612,7 @@ footer ul{list-style:none;display:grid;gap:8px}
       <span class="eyebrow">What customers say</span>
       <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
       <blockquote>“Tropical Shine did an amazing job and a very good value.”</blockquote>
-      <cite>— Google review</cite>
+      <cite>— Pierre S., Google review</cite>
       <div><span class="g-badge">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-1.9 3.3-4.8 3.3-7.9z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1-3.7 1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z"/></svg>
         5.0 rating on Google
@@ -610,14 +661,7 @@ footer ul{list-style:none;display:grid;gap:8px}
       <span class="eyebrow">Service areas</span>
       <h2 style="font-size:clamp(1.75rem,4.5vw,2.5rem);margin-bottom:12px">We come to you across South Florida</h2>
       <p style="color:var(--muted);margin-bottom:22px">Mobile service for homes and businesses in Broward and Miami-Dade counties, including:</p>
-      <ul class="area-list">
-        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>Pembroke Pines</li>
-        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>Weston</li>
-        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>Miramar</li>
-        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>Hollywood</li>
-        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>North Miami</li>
-        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>Miami</li>
-      </ul>
+      <ul class="area-list" id="cityList"></ul>
       <div class="counties"><span>Broward County</span><span>Miami-Dade County</span></div>
     </div>
     <div class="area-card rv">
@@ -641,8 +685,9 @@ footer ul{list-style:none;display:grid;gap:8px}
       <ul class="est-perks">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>No cost, no obligation</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Residential &amp; commercial</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Open until 7 PM</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Mon–Sat 7 AM – 7 PM</li>
       </ul>
+      <a class="ig-link ig-card" href="https://www.instagram.com/_webringtheshine/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-ig"/></svg><span>See our work on Instagram<b>@_webringtheshine</b></span></a>
     </div>
     <form class="est rv" id="estForm" novalidate>
       <div class="row2">
@@ -659,6 +704,9 @@ footer ul{list-style:none;display:grid;gap:8px}
           <option>Patios &amp; pool decks</option>
           <option>Fences</option>
           <option>Commercial property</option>
+          <option>Paver sealing</option>
+          <option>Trash bin cleaning</option>
+          <option>Realtor / rental property</option>
           <option>Not sure / Multiple</option>
         </select>
       </div>
@@ -680,16 +728,18 @@ footer ul{list-style:none;display:grid;gap:8px}
       <div>
         <a href="#top" class="logo" style="margin-bottom:14px">
           <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="url(#lg)"/><path d="M20 8c4.5 6 7 10 7 13.5a7 7 0 0 1-14 0C13 18 15.5 14 20 8z" fill="#fff"/></svg>
-          <span class="logo-txt">Tropical Shine<small>Pressure &amp; Soft Washing LLC</small></span>
+          <span class="logo-txt"><span>Tropical Shine</span> <span>Pressure &amp; Soft Washing</span></span>
         </a>
-        <p>Residential and commercial pressure washing and soft washing in South Florida.</p>
+        <p class="ft-tag">We Bring The Shine</p>
+        <p>Tropical Shine Pressure &amp; Soft Washing LLC — residential and commercial pressure washing and soft washing in Broward &amp; Miami-Dade.</p>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+16452364779">(645) 236-4779</a></li>
           <li><a class="js-wa" href="https://wa.me/16452364779?text=Hi!%20I'd%20like%20a%20free%20estimate" target="_blank" rel="noopener">WhatsApp us</a></li>
-          <li>Open until 7 PM</li>
+          <li><a class="ig-link" href="https://www.instagram.com/_webringtheshine/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-ig"/></svg>@_webringtheshine</a></li>
+          <li>Mon–Sat 7 AM – 7 PM<br><small style="opacity:.75">Closed Sunday</small></li>
         </ul>
       </div>
       <div>
@@ -714,6 +764,7 @@ footer ul{list-style:none;display:grid;gap:8px}
 <!-- shared icons -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 2.2 12C2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></symbol>
 </svg>
 
@@ -730,6 +781,11 @@ document.getElementById('estForm').addEventListener('submit', function (e) {
   if (f.message.value.trim()) lines.push('Message: ' + f.message.value.trim());
   window.open('https://wa.me/16452364779?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
 });
+
+// Service-area city list (edit SERVICE_CITIES in <head>)
+document.getElementById('cityList').innerHTML = SERVICE_CITIES.map(function (c) {
+  return '<li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-pin"/></svg>' + c + '</li>';
+}).join('');
 
 // Mobile carousels: dot indicators
 document.querySelectorAll('.car').forEach(function (car) {
